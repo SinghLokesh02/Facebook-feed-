@@ -6,12 +6,11 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-body">
-          <h2 class="card-title text-center my-3 font-bold">Login</h2>
+          <h2 class="card-title">Change Username</h2>
           <form method="post">
             {% csrf_token %}
             {% bootstrap_form form %}
-            <p class="text-dark">Don't have an account? <a href="{% url 'signup' %}">Signup</a></p>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-outline-success">Change Username</button>
           </form>
         </div>
       </div>
